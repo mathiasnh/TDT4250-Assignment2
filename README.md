@@ -8,6 +8,7 @@ Project bundles:
 * [api](tdt4250.conversion.api): core conversion functionality
 * [gogo](tdt4250.conversion.gogo): shell commands 
 * [servlet](tdt4250.conversion.servlet): servlet providing the unit conversion web service
+* [temperature](tdt4250.conversion.temperature): currently the only core unit conversion, and it does not work...
 
 ## Usage
 
