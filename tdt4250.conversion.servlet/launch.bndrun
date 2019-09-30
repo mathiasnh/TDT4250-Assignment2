@@ -1,4 +1,4 @@
--runfw: org.eclipse.osgi;version=3.13
+-runfw: org.eclipse.osgi;version='[3.13.100.v20180827-1536,3.13.100.v20180827-1536]'
 -runee: JavaSE-1.8
 -runprovidedcapabilities: ${native_capability}
 
@@ -13,7 +13,8 @@
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.shell)',\
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.command)',\
 	osgi.identity;filter:='(osgi.identity=tdt4250.conversion.servlet)',\
-	bnd.identity;id='tdt4250.conversion.gogo'
+	bnd.identity;id='tdt4250.conversion.gogo',\
+	bnd.identity;id='tdt4250.conversion.temperature'
 -runbundles: \
 	org.apache.felix.gogo.command;version='[1.0.2,1.0.3)',\
 	org.apache.felix.gogo.runtime;version='[1.0.10,1.0.11)',\
@@ -23,4 +24,5 @@
 	org.apache.felix.scr;version='[2.1.10,2.1.11)',\
 	tdt4250.conversion.api;version=snapshot,\
 	tdt4250.conversion.servlet;version=snapshot,\
-	tdt4250.conversion.gogo;version=snapshot
+	tdt4250.conversion.gogo;version=snapshot,\
+	tdt4250.conversion.temperature;version=snapshot

@@ -16,17 +16,12 @@ public class Activator implements BundleActivator {
 	private Map<String, ServiceRegistration<Converter>> converterServiceRegistrations = new HashMap<>();
 	
 	public static Activator getInstance() {
-		return INSTANCE;
+        return INSTANCE;
 	}
 
 	@Override
-	public void start(BundleContext context) {
-		try {
-			System.out.println("Started!");
-			INSTANCE = this;			
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
-		}
+	public void start(BundleContext context) throws Exception {
+		INSTANCE = this;
 	}
 
 	@Override

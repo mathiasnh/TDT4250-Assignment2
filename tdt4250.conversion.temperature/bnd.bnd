@@ -1,0 +1,16 @@
+-baseline: *
+-buildpath: \
+	osgi.annotation; version=7.0.0,\
+	osgi.core; version=7.0.0,\
+	osgi.cmpn; version=7.0.0,\
+	tdt4250.conversion.api;version=latest
+
+-testpath: \
+	${junit},\
+	${mockito},\
+	${mockito-deps}
+
+javac.source: 1.8
+javac.target: 1.8
+
+Bundle-Version: 1.0.0.${tstamp}

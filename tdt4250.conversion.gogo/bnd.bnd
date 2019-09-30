@@ -1,7 +1,10 @@
+Bundle-Version: 1.0.0.${tstamp}
+Bundle-Activator: tdt4250.conversion.gogo.Activator
+
 -buildpath: \
-	osgi.annotation; version=7.0.0,\
-	osgi.core; version=7.0.0,\
-	osgi.cmpn; version=7.0.0,\
+	osgi.annotation;version=7.0.0,\
+	osgi.core;version=7.0.0,\
+	osgi.cmpn;version=7.0.0,\
 	org.apache.felix.gogo.runtime,\
 	tdt4250.conversion.api;version=latest
 
@@ -12,5 +15,3 @@
 
 javac.source: 1.8
 javac.target: 1.8
-
-Bundle-Version: 0.0.0.${tstamp}

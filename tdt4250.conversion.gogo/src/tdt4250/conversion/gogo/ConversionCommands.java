@@ -43,11 +43,8 @@ public class ConversionCommands {
 				} finally {
 					bc.ungetService(serviceReference);
 				}
-				System.out.print(" ");
 			}
-		} catch (InvalidSyntaxException e) {
-		}
-		System.out.println();
+		} catch (InvalidSyntaxException e) {}
 	}
 
 	public void add(@Descriptor("Name") String name,
