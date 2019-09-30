@@ -8,7 +8,7 @@
 -runrequires: \
 	bnd.identity;id='org.apache.felix.gogo.command',\
 	bnd.identity;id='org.apache.felix.gogo.shell',\
-	bnd.identity;version='latest';id='unit.conversion.servlet'
+	bnd.identity;version='latest';id='tdt4250.conversion.servlet'
 
 -runbundles: \
 	org.apache.felix.http.jetty;version='[4.0.6,4.0.7)',\
@@ -17,8 +17,8 @@
 	org.apache.felix.gogo.command,\
 	org.apache.felix.gogo.runtime,\
 	org.apache.felix.gogo.shell,\
-	unit.conversion.api;version=snapshot,\
-	unit.conversion.servlet;version=snapshot,\
+	tdt4250.conversion.api;version=snapshot,\
+	tdt4250.conversion.servlet;version=snapshot
 
 
 -testpath: \

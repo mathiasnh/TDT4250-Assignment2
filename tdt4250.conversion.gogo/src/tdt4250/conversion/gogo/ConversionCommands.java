@@ -66,14 +66,20 @@ public class ConversionCommands {
 						  @Descriptor("Target unit") String target) {
 		BundleContext bc = FrameworkUtil.getBundle(this.getClass()).getBundleContext();
 		try {
+			String result = "";
+			boolean conversionFound = false;
 			for (ServiceReference<Converter> serviceReference : bc.getServiceReferences(Converter.class, null)) {
 				Converter converter = bc.getService(serviceReference);
 				if (converter.getSrc().contentEquals(source) && converter.getTar().contentEquals(target)) {
-					System.out.println(converter.convert(value).getMessage());
-				} else {
-					throw new MissingResourceException("Sorry, no suitable converter",
-							this.getClass().getCanonicalName(), String.format("%s -> %s", source, target));
+					result = converter.convert(value).getMessage();
+					conversionFound = true;
 				}
+			}
+			if (conversionFound) {
+				System.out.println(result);
+			} else {
+				throw new MissingResourceException("Sorry, no suitable converter",
+						this.getClass().getCanonicalName(), String.format("%s -> %s", source, target));
 			}
 		} catch (InvalidSyntaxException e) {
 			e.printStackTrace();

@@ -4,10 +4,10 @@ import org.osgi.annotation.versioning.ConsumerType;
 
 @ConsumerType
 public class ConversionResult {
-	private final boolean success;
-	private final String message;
+	private boolean success;
+	private String message = "Sorry, no suitable converter"; // Default message
 	
-	public ConversionResult(final boolean success, final String message) {
+	public ConversionResult(boolean success, String message) {
 		this.success = success;
 		this.message = message;
 	}

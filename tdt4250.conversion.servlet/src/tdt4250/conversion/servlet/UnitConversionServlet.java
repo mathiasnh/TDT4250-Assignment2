@@ -38,6 +38,7 @@ public class UnitConversionServlet extends HttpServlet implements Servlet {
 			unbind = "removeConverter"
 	)
 	public void addConverter(Converter converter) {
+		System.out.println("Added converter: " + converter.getName());
 		this.conversionHandler.addConverter(converter);
 	}
 	public void removeConverter(Converter converter) {

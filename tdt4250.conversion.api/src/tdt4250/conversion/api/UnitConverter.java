@@ -51,7 +51,7 @@ public class UnitConverter implements Converter {
 	}
 	
 	protected String getSuccessMessageStringFormat() {
-		return "%s" + this.getSrc() + " was succsessfully converted to %.2f" + this.getTar() ;
+		return "%s" + this.getSrc() + " was succsessfully converted to %.3f" + this.getTar() ;
 	}
 
 	protected String getFailureMessageStringFormat() {

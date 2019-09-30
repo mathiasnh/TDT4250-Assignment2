@@ -1,27 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="tdt4250.conversion.gogo" increment="1569853530804">
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="tdt4250.conversion.gogo" increment="1569863109522">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="tdt4250.conversion.gogo"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.0.0.201909301425" type="Version"/>
+      <attribute name="version" value="1.0.0.201909301705" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.0.0.201909301425" type="Version"/>
+      <attribute name="bundle-version" value="1.0.0.201909301705" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="tdt4250.conversion.gogo"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.0.0.201909301425" type="Version"/>
+      <attribute name="bundle-version" value="1.0.0.201909301705" type="Version"/>
       <attribute name="osgi.wiring.host" value="tdt4250.conversion.gogo"/>
     </capability>
     <capability namespace="osgi.service">
       <attribute name="objectClass" value="tdt4250.conversion.gogo.ConversionCommands" type="List&lt;String&gt;"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="8003" type="Long"/>
+      <attribute name="size" value="8119" type="Long"/>
       <attribute name="url" value="generated/tdt4250.conversion.gogo.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="38BEAEE765B75570C5380D96B56235EE3B53787583F32FDC3C526F6D64760FF1"/>
+      <attribute name="osgi.content" value="9BB5C171488D20FEA4A5B3C2E882EC1E65313ABD8443B697D3820DA99E5EC3D9"/>
     </capability>
     <capability namespace="bndtools.workspace">
       <attribute name="bndtools.workspace" value="file:/Users/mathiashenriksen/git/TDT4250/workspace2"/>

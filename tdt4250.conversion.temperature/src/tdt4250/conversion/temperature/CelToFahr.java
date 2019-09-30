@@ -8,7 +8,7 @@ import tdt4250.conversion.api.UnitConverter;
 public class CelToFahr extends UnitConverter{
 	
 	public CelToFahr() {
-		super("CelToFahr", "C", "F", "C*1.8+32");
+		super("CelToFahr", "F", "C", "*1.8+32");
 	}	
 	
 }
