@@ -5,9 +5,9 @@ Second assignment for TDT4250 Advanced Software Design
 This project provides modularity in the form of multiple bundles that work together with low coupling, and exstensibility in that the project is cohesive and easliy expanded with more bundles and components.
 
 Project bundles:
-* api: core conversion functionality
-* gogo: shell commands 
-* servlet: servlet providing the unit conversion web service
+* [api](tdt4250.conversion.api): core conversion functionality
+* [gogo](tdt4250.conversion.gogo): shell commands 
+* [servlet](tdt4250.conversion.api): servlet providing the unit conversion web service
 
 ## Usage
 
