@@ -11,7 +11,7 @@ Project bundles:
 
 To run the project, just open `launch.bndrun`in the `tdt4250.conversion.servlet`bundle, and click Run OSGi.
 
-# Gogo shell commands 
+## Gogo shell commands 
 * `list` - lists all available unit conversions
 * `add {name} {target unit} {source unit} {expression}` - adds a conversion with given attributes. For instance, Celcius to Fahrenheit would be added like `add celToFahr F C "*1.8+32"`. Keep in mind that using the multiplication operator (`*`) will cause an error, so make sure to surround it the expression with quotation marks if you wish to use multiplication.
 * `remove {name}`- removes the given conversion
