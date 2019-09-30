@@ -18,5 +18,4 @@ To run the project, just open `launch.bndrun`in the `tdt4250.conversion.servlet`
 * `convert {source unit} {source value} {target unit}` - finds a conversion that matches the units and calculates the target value
 
 ## Problems 
-* Pre-made unit conversions are not loaded
-* No input requirements (fault detection) for shell commands
+* Pre-made unit conversions are not loaded correctly
