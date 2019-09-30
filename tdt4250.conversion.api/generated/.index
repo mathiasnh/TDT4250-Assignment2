@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="tdt4250.conversion.api" increment="1569863109414">
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="tdt4250.conversion.api" increment="1569865547185">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="tdt4250.conversion.api"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.0.0.201909301705" type="Version"/>
+      <attribute name="version" value="1.0.0.201909301745" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.0.0.201909301705" type="Version"/>
+      <attribute name="bundle-version" value="1.0.0.201909301745" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="tdt4250.conversion.api"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.0.0.201909301705" type="Version"/>
+      <attribute name="bundle-version" value="1.0.0.201909301745" type="Version"/>
       <attribute name="osgi.wiring.host" value="tdt4250.conversion.api"/>
     </capability>
     <capability namespace="osgi.wiring.package">
@@ -19,10 +19,10 @@
       <attribute name="osgi.wiring.package" value="tdt4250.conversion.api"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="8306" type="Long"/>
+      <attribute name="size" value="8473" type="Long"/>
       <attribute name="url" value="generated/tdt4250.conversion.api.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="FED9D1369D0693D0066F941DB8D9CA1649A837D1264FDB2DBA73C6746D3F56AD"/>
+      <attribute name="osgi.content" value="D3E6B3654BE265C8B191BB9280B140B730C2F74E7F63022FF5EEDA9BD9DC71D9"/>
     </capability>
     <capability namespace="bndtools.workspace">
       <attribute name="bndtools.workspace" value="file:/Users/mathiashenriksen/git/TDT4250/workspace2"/>

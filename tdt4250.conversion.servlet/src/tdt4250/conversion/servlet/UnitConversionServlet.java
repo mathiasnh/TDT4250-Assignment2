@@ -38,7 +38,6 @@ public class UnitConversionServlet extends HttpServlet implements Servlet {
 			unbind = "removeConverter"
 	)
 	public void addConverter(Converter converter) {
-		System.out.println("Added converter: " + converter.getName());
 		this.conversionHandler.addConverter(converter);
 	}
 	public void removeConverter(Converter converter) {
@@ -63,18 +62,10 @@ public class UnitConversionServlet extends HttpServlet implements Servlet {
 		String src = request.getParameter("src");
 		String val = request.getParameter("val");
 		String tar = request.getParameter("tar");
-		try {
-			ConversionResult result = this.conversionHandler.convert(src, tar, val);
-			response.setContentType("text/plain");
-			PrintWriter writer = response.getWriter();
-			writer.print(result.getMessage());
-			return;
-		} catch(NumberFormatException nfe) {
-			response.sendError(HttpServletResponse.SC_BAD_REQUEST, "Parameter \"v\" has wrong format. Expected number");
-			return;
-		} catch(MissingResourceException mre) {
-			response.sendError(HttpServletResponse.SC_NOT_FOUND, mre.getMessage());
-			return;
-		}
+		ConversionResult result = this.conversionHandler.convert(src, tar, val);
+		response.setContentType("text/plain");
+		PrintWriter writer = response.getWriter();
+		writer.print(result.getMessage());
+		return;
 	}
 }

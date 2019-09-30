@@ -43,7 +43,13 @@ public class UnitConverter implements Converter {
 		try {
 			//se.put(this.getSrc(), String.valueOf(srcValue));
 			System.out.println(String.valueOf(srcValue) + expression);
-			double result = (double) se.eval(String.valueOf(srcValue) + expression);
+			double result;
+			Object calc = se.eval(String.valueOf(srcValue) + expression);
+			if (calc instanceof Integer) {
+				result = (int) calc;
+			} else {
+				result = (double) calc;
+			}
 			return new ConversionResult(true, String.format(getSuccessMessageStringFormat(), srcValue, result));
 		} catch (ScriptException e) {
 			return new ConversionResult(true, String.format(getFailureMessageStringFormat()));
