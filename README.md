@@ -7,7 +7,7 @@ This project provides modularity in the form of multiple bundles that work toget
 Project bundles:
 * [api](tdt4250.conversion.api): core conversion functionality
 * [gogo](tdt4250.conversion.gogo): shell commands 
-* [servlet](tdt4250.conversion.api): servlet providing the unit conversion web service
+* [servlet](tdt4250.conversion.servlet): servlet providing the unit conversion web service
 
 ## Usage
 
