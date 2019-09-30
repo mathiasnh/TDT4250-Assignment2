@@ -41,16 +41,17 @@ public class UnitConverter implements Converter {
 		ScriptEngineManager sem = new ScriptEngineManager();
 		ScriptEngine se = sem.getEngineByName("JavaScript");
 		try {
-			se.put(this.getSrc(), String.valueOf(srcValue));
-			Double result = (Double) se.eval(expression);
+			//se.put(this.getSrc(), String.valueOf(srcValue));
+			System.out.println(String.valueOf(srcValue) + expression);
+			double result = (double) se.eval(String.valueOf(srcValue) + expression);
 			return new ConversionResult(true, String.format(getSuccessMessageStringFormat(), srcValue, result));
 		} catch (ScriptException e) {
-			return new ConversionResult(true, String.format(getFailureMessageStringFormat(), srcValue));
+			return new ConversionResult(true, String.format(getFailureMessageStringFormat()));
 		}
 	}
 	
 	protected String getSuccessMessageStringFormat() {
-		return this.name + " was succsessfully converted to %.2f " ;
+		return "%s" + this.getSrc() + " was succsessfully converted to %.2f" + this.getTar() ;
 	}
 
 	protected String getFailureMessageStringFormat() {

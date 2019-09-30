@@ -31,7 +31,6 @@ public class Activator implements BundleActivator {
 
 	
 	public boolean addConverter(Converter converter) {
-		System.out.println(converter.getName());
 		boolean existed = removeConverter(converter.getName());
 		BundleContext bc = FrameworkUtil.getBundle(this.getClass()).getBundleContext();
 		ServiceRegistration<Converter> serviceRegistration = bc.registerService(Converter.class, converter, null);

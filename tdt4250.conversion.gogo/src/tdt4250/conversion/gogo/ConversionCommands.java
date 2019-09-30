@@ -38,7 +38,7 @@ public class ConversionCommands {
 				Converter converter = bc.getService(serviceReference);
 				try {
 					if (converter != null) {
-						System.out.println(converter.getTar() + " = " + converter.getExpression());
+						System.out.println(converter.getTar() + " = " + converter.getSrc() + converter.getExpression());
 					}
 				} finally {
 					bc.ungetService(serviceReference);
@@ -68,10 +68,8 @@ public class ConversionCommands {
 		try {
 			for (ServiceReference<Converter> serviceReference : bc.getServiceReferences(Converter.class, null)) {
 				Converter converter = bc.getService(serviceReference);
-				if (converter != null) {
-					if (converter.getSrc().contentEquals(source) && converter.getTar().contentEquals(target)) {
-						System.out.println(converter.convert(value).getMessage());
-					}
+				if (converter.getSrc().contentEquals(source) && converter.getTar().contentEquals(target)) {
+					System.out.println(converter.convert(value).getMessage());
 				} else {
 					throw new MissingResourceException("Sorry, no suitable converter",
 							this.getClass().getCanonicalName(), String.format("%s -> %s", source, target));
