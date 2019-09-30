@@ -1,27 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="tdt4250.conversion.servlet" increment="1569787597480">
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="tdt4250.conversion.servlet" increment="1569803450797">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="tdt4250.conversion.servlet"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="0.0.0.201909292006" type="Version"/>
+      <attribute name="version" value="0.0.0.201909300030" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="0.0.0.201909292006" type="Version"/>
+      <attribute name="bundle-version" value="0.0.0.201909300030" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="tdt4250.conversion.servlet"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="0.0.0.201909292006" type="Version"/>
+      <attribute name="bundle-version" value="0.0.0.201909300030" type="Version"/>
       <attribute name="osgi.wiring.host" value="tdt4250.conversion.servlet"/>
     </capability>
     <capability namespace="osgi.service">
       <attribute name="objectClass" value="javax.servlet.Servlet" type="List&lt;String&gt;"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="5328" type="Long"/>
+      <attribute name="size" value="5707" type="Long"/>
       <attribute name="url" value="generated/tdt4250.conversion.servlet.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="288ECF2D42467956B2A20568F051E34673BE7FE1287A3293022D02355D2F4992"/>
+      <attribute name="osgi.content" value="C73E0E811C77A2366C0D7A881F95BA334D165EB90B339F9064204BDE10E64606"/>
     </capability>
     <capability namespace="bndtools.workspace">
       <attribute name="bndtools.workspace" value="file:/Users/mathiashenriksen/git/TDT4250/workspace2"/>
@@ -34,10 +34,10 @@
       <directive name="filter" value="(&amp;(osgi.wiring.package=javax.servlet.http))"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=tdt4250.conversion.api))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=tdt4250.conversion.api)(&amp;(version&gt;=1.0.0)(!(version&gt;=2.0.0))))"/>
     </requirement>
     <requirement namespace="osgi.service">
-      <directive name="filter" value="(objectClass=tdt4250.conversion.api.Unit)"/>
+      <directive name="filter" value="(objectClass=tdt4250.conversion.api.Converter)"/>
       <directive name="effective" value="active"/>
       <directive name="resolution" value="optional"/>
       <directive name="cardinality" value="multiple"/>

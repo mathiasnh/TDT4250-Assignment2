@@ -13,9 +13,7 @@
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.shell)',\
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.command)',\
 	osgi.identity;filter:='(osgi.identity=tdt4250.conversion.servlet)',\
-	bnd.identity;id='tdt4250.conversion.gogo',\
-	bnd.identity;id='org.apache.felix.configadmin',\
-	bnd.identity;id='org.osgi.service.cm'
+	bnd.identity;id='tdt4250.conversion.gogo'
 -runbundles: \
 	org.apache.felix.gogo.command;version='[1.0.2,1.0.3)',\
 	org.apache.felix.gogo.runtime;version='[1.0.10,1.0.11)',\
@@ -25,6 +23,4 @@
 	org.apache.felix.scr;version='[2.1.10,2.1.11)',\
 	tdt4250.conversion.api;version=snapshot,\
 	tdt4250.conversion.servlet;version=snapshot,\
-	org.apache.felix.configadmin;version='[1.9.8,1.9.9)',\
-	tdt4250.conversion.gogo;version=snapshot,\
-	org.osgi.service.cm;version='[1.5.0,1.5.1)'
+	tdt4250.conversion.gogo;version=snapshot
