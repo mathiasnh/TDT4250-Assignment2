@@ -12,9 +12,9 @@
 -runrequires: \
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.shell)',\
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.command)',\
-	osgi.identity;filter:='(osgi.identity=tdt4250.conversion.servlet)',\
 	bnd.identity;id='tdt4250.conversion.gogo',\
-	bnd.identity;id='tdt4250.conversion.temperature'
+	bnd.identity;version='latest';id='tdt4250.conversion.servlet',\
+	bnd.identity;version='latest';id='tdt4250.conversion.temperature'
 -runbundles: \
 	org.apache.felix.gogo.command;version='[1.0.2,1.0.3)',\
 	org.apache.felix.gogo.runtime;version='[1.0.10,1.0.11)',\
