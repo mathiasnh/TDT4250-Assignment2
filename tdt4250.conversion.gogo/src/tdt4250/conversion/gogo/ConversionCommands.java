@@ -16,10 +16,7 @@ import org.osgi.service.component.annotations.*;
 
 import tdt4250.conversion.api.ConversionResult;
 import tdt4250.conversion.api.Converter;
-import tdt4250.conversion.api.Unit;
 import tdt4250.conversion.api.UnitConverter;
-import tdt4250.conversion.api.UnitSearchResult;
-import tdt4250.conversion.util.UnitConversion;
 
 @Component(
 		service = ConversionCommands.class,
