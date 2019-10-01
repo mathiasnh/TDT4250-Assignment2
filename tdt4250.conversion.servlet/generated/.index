@@ -1,27 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="tdt4250.conversion.servlet" increment="1569867519704">
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="tdt4250.conversion.servlet" increment="1569936698578">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="tdt4250.conversion.servlet"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.0.0.201909301818" type="Version"/>
+      <attribute name="version" value="1.0.0.201910011331" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.0.0.201909301818" type="Version"/>
+      <attribute name="bundle-version" value="1.0.0.201910011331" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="tdt4250.conversion.servlet"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.0.0.201909301818" type="Version"/>
+      <attribute name="bundle-version" value="1.0.0.201910011331" type="Version"/>
       <attribute name="osgi.wiring.host" value="tdt4250.conversion.servlet"/>
     </capability>
     <capability namespace="osgi.service">
       <attribute name="objectClass" value="javax.servlet.Servlet" type="List&lt;String&gt;"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="5428" type="Long"/>
+      <attribute name="size" value="5424" type="Long"/>
       <attribute name="url" value="generated/tdt4250.conversion.servlet.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="212AFD4DD6B2ED8FCAC8777DE083000D3A7858808B7F6647D854FF40EF0C8741"/>
+      <attribute name="osgi.content" value="24E55C49D0038B1229125CE5749E16336F341C02D126D7D435A176FB3CCFEA28"/>
     </capability>
     <capability namespace="bndtools.workspace">
       <attribute name="bndtools.workspace" value="file:/Users/mathiashenriksen/git/TDT4250/workspace2"/>

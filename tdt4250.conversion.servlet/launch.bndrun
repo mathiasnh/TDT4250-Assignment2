@@ -14,7 +14,9 @@
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.command)',\
 	bnd.identity;id='tdt4250.conversion.gogo',\
 	bnd.identity;version='latest';id='tdt4250.conversion.servlet',\
-	bnd.identity;version='latest';id='tdt4250.conversion.temperature'
+	bnd.identity;version='latest';id='tdt4250.conversion.temperature',\
+	bnd.identity;version='latest';id='tdt4250.conversion.length',\
+	bnd.identity;version='latest';id='tdt4250.conversion.weight'
 -runbundles: \
 	org.apache.felix.gogo.command;version='[1.0.2,1.0.3)',\
 	org.apache.felix.gogo.runtime;version='[1.0.10,1.0.11)',\
@@ -25,4 +27,6 @@
 	tdt4250.conversion.api;version=snapshot,\
 	tdt4250.conversion.servlet;version=snapshot,\
 	tdt4250.conversion.gogo;version=snapshot,\
-	tdt4250.conversion.temperature;version=snapshot
+	tdt4250.conversion.temperature;version=snapshot,\
+	tdt4250.conversion.length;version=snapshot,\
+	tdt4250.conversion.weight;version=snapshot

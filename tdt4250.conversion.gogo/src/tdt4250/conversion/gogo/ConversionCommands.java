@@ -38,7 +38,7 @@ public class ConversionCommands {
 				Converter converter = bc.getService(serviceReference);
 				try {
 					if (converter != null) {
-						System.out.println(converter.getTar() + " = " + converter.getSrc() + converter.getExpression());
+						System.out.println(converter.getName() + " (" + converter.getTar() + " = " + converter.getSrc() + converter.getExpression() + ")");
 					}
 				} finally {
 					bc.ungetService(serviceReference);
